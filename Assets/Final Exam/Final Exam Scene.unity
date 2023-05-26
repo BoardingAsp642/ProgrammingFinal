@@ -663,9 +663,11 @@ GameObject:
   - component: {fileID: 394707090}
   - component: {fileID: 394707089}
   - component: {fileID: 394707088}
+  - component: {fileID: 394707092}
+  - component: {fileID: 394707093}
   m_Layer: 0
   m_Name: ColorPickUp Yellow
-  m_TagString: Untagged
+  m_TagString: Yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -784,6 +786,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394707092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394707087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46882d8c8018414cbc5322c6cac622e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 748487987}
+  newCarColorSprite: {fileID: 21300000, guid: 2e262e809a010c944ad2112adfea611f, type: 3}
+  car: {fileID: 0}
+  newColor: {fileID: 0}
+--- !u!114 &394707093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394707087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69914015ac9432745867cb6c706cccb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 748487987}
+  originalSpeed: 3
+  boostedSpeed: 5
 --- !u!1 &439742417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,9 +1774,10 @@ GameObject:
   - component: {fileID: 866235278}
   - component: {fileID: 866235277}
   - component: {fileID: 866235276}
+  - component: {fileID: 866235280}
   m_Layer: 0
   m_Name: ColorPickUp Green
-  m_TagString: Untagged
+  m_TagString: Green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1862,6 +1896,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866235280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866235275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46882d8c8018414cbc5322c6cac622e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 748487987}
+  newCarColorSprite: {fileID: 21300000, guid: b73ec69ab3c411942812b5914b92e127, type: 3}
+  car: {fileID: 0}
+  newColor: {fileID: 0}
 --- !u!1 &1209273258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,9 +2722,10 @@ GameObject:
   - component: {fileID: 1887034676}
   - component: {fileID: 1887034675}
   - component: {fileID: 1887034674}
+  - component: {fileID: 1887034678}
   m_Layer: 0
   m_Name: ColorPickUp Red
-  m_TagString: Untagged
+  m_TagString: Orange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2793,6 +2844,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887034678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887034673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46882d8c8018414cbc5322c6cac622e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 748487987}
+  newCarColorSprite: {fileID: 21300000, guid: 72ddb780b8f97264f99bf0e53af19dc4, type: 3}
+  car: {fileID: 0}
+  newColor: {fileID: 0}
 --- !u!1 &2086630568
 GameObject:
   m_ObjectHideFlags: 0

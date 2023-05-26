@@ -5,6 +5,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     public float moveSpeed;
+
     public float turnSpeed;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
@@ -23,6 +24,10 @@ public class Car : MonoBehaviour
    
     void Update()
     {
+        verticalInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.up * moveSpeed * Time.deltaTime * verticalInput);
+        transform.Rotate(Vector3.back, turnSpeed * Time.deltaTime * horizontalInput);
 
         /*
          * FINAL EXAM #1

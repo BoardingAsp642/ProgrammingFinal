@@ -14,10 +14,20 @@ using UnityEngine;
  */
 
 
-public class ColorPickUp : MonoBehaviour
+public class ColorPickUp : PickUp
 {
     public Sprite newCarColorSprite;
+    public Car car;
+    public SpriteRenderer newColor;
+    public override void Activate()
+    {
+        newColor = GetComponent<SpriteRenderer>();
 
+
+
+
+
+    }
 
 
 }

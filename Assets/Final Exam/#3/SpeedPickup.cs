@@ -15,10 +15,24 @@ using UnityEngine;
  *      - Change the speed back to the originalSpeed
  * 
  */
-public class SpeedPickup : MonoBehaviour
+public class SpeedPickup : PickUp
 {
-    public float originalSpeed;
+    public float originalSpeed;//3
     public float boostedSpeed;
+    public override void Activate()
+    {
+        transform.Translate(Vector3.up * boostedSpeed * Time.deltaTime);
+        StartCoroutine(Return());
+        
 
+    }
+
+
+
+    IEnumerator Return()
+    {
+        yield return new WaitForSeconds(2);
+        transform.Translate(Vector3.up * originalSpeed * Time.deltaTime);
+    }
 
 }
